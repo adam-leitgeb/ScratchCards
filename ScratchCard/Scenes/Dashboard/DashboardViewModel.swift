@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import UserNotifications
 
 protocol DashboardViewModel: ObservableObject {
     var viewState: DashboardViewState { get }
@@ -36,6 +37,7 @@ final class DashboardViewModelImp: DashboardViewModel {
         self.scratchCardStorage = scratchCardStorage
         self.flowState = flowState
         setupSubscriptions()
+        requestNotificationPermission()
         loadData()
     }
 
@@ -86,5 +88,11 @@ final class DashboardViewModelImp: DashboardViewModel {
             didTapActivate: { [weak self] in self?.didTapActivation() }
         )
         return .content(contentModel)
+    }
+
+    private func requestNotificationPermission() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { _, _ in
+            // Do nothing
+        }
     }
 }

@@ -38,6 +38,7 @@
 		83DD49EE2A04F36C000F2E02 /* ActivateScratchCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49ED2A04F36C000F2E02 /* ActivateScratchCardResponse.swift */; };
 		83DD49F02A04FDDE000F2E02 /* ScratchCardDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49EF2A04FDDE000F2E02 /* ScratchCardDetailViewModelTests.swift */; };
 		83DD49F52A0512C3000F2E02 /* ScratchCardDetailServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49F42A0512C3000F2E02 /* ScratchCardDetailServiceTests.swift */; };
+		83DD49F92A051DBE000F2E02 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49F82A051DBE000F2E02 /* NotificationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		83DD49EF2A04FDDE000F2E02 /* ScratchCardDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardDetailViewModelTests.swift; sourceTree = "<group>"; };
 		83DD49F32A050EEE000F2E02 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83DD49F42A0512C3000F2E02 /* ScratchCardDetailServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardDetailServiceTests.swift; sourceTree = "<group>"; };
+		83DD49F82A051DBE000F2E02 /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				83DD49AF2A03CEDA000F2E02 /* Extensions */,
 				83DD49AB2A03CC73000F2E02 /* Models */,
 				83DD49BF2A03D447000F2E02 /* Views */,
+				83DD49F82A051DBE000F2E02 /* NotificationDelegate.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				83DD49EC2A04F32F000F2E02 /* URL+StringLiteral.swift in Sources */,
 				83DD49E72A04E68B000F2E02 /* ScratchCardDetailView.swift in Sources */,
 				83DD49BC2A03D409000F2E02 /* DashboardContentStateView.swift in Sources */,
+				83DD49F92A051DBE000F2E02 /* NotificationDelegate.swift in Sources */,
 				83DD49B52A03D06F000F2E02 /* AppState.swift in Sources */,
 				83DD49A92A03CBE9000F2E02 /* DashboardView.swift in Sources */,
 				83DD49E82A04E68B000F2E02 /* ScratchCardDetailViewModel.swift in Sources */,

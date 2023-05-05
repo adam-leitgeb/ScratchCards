@@ -9,6 +9,7 @@ import Combine
 import Foundation
 import SwiftUI
 import UIKit
+import UserNotifications
 
 protocol ScratchCardDetailViewModel: ObservableObject {
     var scratchCardViewModel: ScratchCardViewModel? { get }
@@ -26,6 +27,7 @@ final class ScratchCardDetailViewModelImp: ScratchCardDetailViewModel {
     private let scratchCardStorage: SharedStorage<ScratchCard>
     private let flowState: AppFlowState
     private let service: ScratchCardDetailService
+    private let notificationDelegate = NotificationDelegate()
     private var subscriptions: Set<AnyCancellable> = []
 
     // State
@@ -111,6 +113,7 @@ final class ScratchCardDetailViewModelImp: ScratchCardDetailViewModel {
     private func process(_ completion: Subscribers.Completion<Error>) {
         if case let .failure(error) = completion {
             self.error = error.localizedDescription
+            displayNotification(for: error)
         }
         isLoading = false
     }
@@ -119,6 +122,19 @@ final class ScratchCardDetailViewModelImp: ScratchCardDetailViewModel {
         scratchCardStorage.value = value
         flowState.showScratchCardDetail = false
         UINotificationFeedbackGenerator().notificationOccurred(.success)
+    }
+
+    private func displayNotification(for error: Error) {
+        let content = UNMutableNotificationContent()
+        content.title = "Error"
+        content.subtitle = error.localizedDescription
+        content.sound = .default
+
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        let request = UNNotificationRequest( identifier: UUID().uuidString, content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().delegate = notificationDelegate
+        UNUserNotificationCenter.current().add(request)
     }
 }
 
