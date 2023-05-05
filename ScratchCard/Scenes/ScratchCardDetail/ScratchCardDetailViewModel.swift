@@ -16,6 +16,7 @@ protocol ScratchCardDetailViewModel: ObservableObject {
     var primaryActionTitle: String { get }
     var error: String? { get set }
     var isLoading: Bool { get }
+    var interactiveDismissDisabled: Bool { get }
 
     func didTapConfirm()
 }
@@ -36,6 +37,7 @@ final class ScratchCardDetailViewModelImp: ScratchCardDetailViewModel {
     @Published var scratchCardViewModel: ScratchCardViewModel?
     @Published var primaryActionTitle: String = ""
     @Published var error: String?
+    @Published var interactiveDismissDisabled: Bool = false
 
     // MARK: - Initialization
 
@@ -98,6 +100,7 @@ final class ScratchCardDetailViewModelImp: ScratchCardDetailViewModel {
             return
         }
         isLoading = true
+        interactiveDismissDisabled = true
 
         service.activate(scratchCard)
             .receive(on: RunLoop.main)
@@ -116,6 +119,7 @@ final class ScratchCardDetailViewModelImp: ScratchCardDetailViewModel {
             displayNotification(for: error)
         }
         isLoading = false
+        interactiveDismissDisabled = false
     }
 
     private func process(_ value: ScratchCard) {

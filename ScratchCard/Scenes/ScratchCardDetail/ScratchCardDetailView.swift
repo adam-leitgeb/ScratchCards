@@ -27,6 +27,7 @@ struct ScratchCardDetailView<ViewModel: ScratchCardDetailViewModel>: View {
             primaryAction
         }
         .alert(item: $viewModel.error) { Alert(title: Text($0)) }
+        .interactiveDismissDisabled(viewModel.interactiveDismissDisabled)
     }
 
     // Views
@@ -59,6 +60,7 @@ extension ScratchCardDetailView_Previews {
         var error: String?
         var primaryActionTitle: String = "Scratch!"
         var scratchCardViewModel: ScratchCardViewModel? = ScratchCardViewModel(scratchCard: .mockUnopened)
+        var interactiveDismissDisabled: Bool = false
 
         func didTapConfirm() {}
     }
