@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83DD493E2A03BFBE000F2E02 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD493D2A03BFBE000F2E02 /* App.swift */; };
+		83DD49422A03BFBF000F2E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DD49412A03BFBF000F2E02 /* Assets.xcassets */; };
+		83DD49462A03BFBF000F2E02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DD49452A03BFBF000F2E02 /* Preview Assets.xcassets */; };
+		83DD495A2A03BFBF000F2E02 /* ScratchCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49592A03BFBF000F2E02 /* ScratchCardUITests.swift */; };
+		83DD495C2A03BFBF000F2E02 /* ScratchCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD495B2A03BFBF000F2E02 /* ScratchCardUITestsLaunchTests.swift */; };
+		83DD49A92A03CBE9000F2E02 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49A72A03CBE9000F2E02 /* DashboardView.swift */; };
+		83DD49AA2A03CBE9000F2E02 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49A82A03CBE9000F2E02 /* DashboardViewModel.swift */; };
+		83DD49AD2A03CC7B000F2E02 /* ScratchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49AC2A03CC7B000F2E02 /* ScratchCard.swift */; };
+		83DD49B12A03CEE4000F2E02 /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49B02A03CEE4000F2E02 /* String+Error.swift */; };
+		83DD49B32A03CFD4000F2E02 /* DashboardViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49B22A03CFD4000F2E02 /* DashboardViewState.swift */; };
+		83DD49B52A03D06F000F2E02 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49B42A03D06F000F2E02 /* AppState.swift */; };
+		83DD49B82A03D120000F2E02 /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49B72A03D120000F2E02 /* SharedStorage.swift */; };
+		83DD49BA2A03D2F2000F2E02 /* DashboardEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49B92A03D2F2000F2E02 /* DashboardEmptyStateView.swift */; };
+		83DD49BC2A03D409000F2E02 /* DashboardContentStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49BB2A03D409000F2E02 /* DashboardContentStateView.swift */; };
+		83DD49BE2A03D443000F2E02 /* ScratchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49BD2A03D443000F2E02 /* ScratchCardView.swift */; };
+		83DD49C22A03D662000F2E02 /* ScratchCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49C12A03D662000F2E02 /* ScratchCardViewModel.swift */; };
+		83DD49CA2A03DF06000F2E02 /* PrimaryButtonStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49C92A03DF06000F2E02 /* PrimaryButtonStyleModifier.swift */; };
+		83DD49CF2A03E5F4000F2E02 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49CE2A03E5F4000F2E02 /* PrimaryButton.swift */; };
+		83DD49D12A03ED6D000F2E02 /* AppFlowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49D02A03ED6D000F2E02 /* AppFlowState.swift */; };
+		83DD49D52A04CAEA000F2E02 /* BottomStackStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49D42A04CAEA000F2E02 /* BottomStackStyle.swift */; };
+		83DD49D72A04CB81000F2E02 /* DashboardContentStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49D62A04CB81000F2E02 /* DashboardContentStateViewModel.swift */; };
+		83DD49DE2A04D5D2000F2E02 /* RotationShakeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49DD2A04D5D2000F2E02 /* RotationShakeAnimation.swift */; };
+		83DD49E12A04DD17000F2E02 /* ScratchCardDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49E02A04DD17000F2E02 /* ScratchCardDetailService.swift */; };
+		83DD49E32A04E4FF000F2E02 /* String+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49E22A04E4FF000F2E02 /* String+Identifiable.swift */; };
+		83DD49E72A04E68B000F2E02 /* ScratchCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49E52A04E68B000F2E02 /* ScratchCardDetailView.swift */; };
+		83DD49E82A04E68B000F2E02 /* ScratchCardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49E62A04E68B000F2E02 /* ScratchCardDetailViewModel.swift */; };
+		83DD49EA2A04EBF8000F2E02 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49E92A04EBF8000F2E02 /* ActivityIndicatorView.swift */; };
+		83DD49EC2A04F32F000F2E02 /* URL+StringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49EB2A04F32F000F2E02 /* URL+StringLiteral.swift */; };
+		83DD49EE2A04F36C000F2E02 /* ActivateScratchCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49ED2A04F36C000F2E02 /* ActivateScratchCardResponse.swift */; };
+		83DD49F02A04FDDE000F2E02 /* ScratchCardDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49EF2A04FDDE000F2E02 /* ScratchCardDetailViewModelTests.swift */; };
+		83DD49F52A0512C3000F2E02 /* ScratchCardDetailServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD49F42A0512C3000F2E02 /* ScratchCardDetailServiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83DD494C2A03BFBF000F2E02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83DD49322A03BFBE000F2E02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83DD49392A03BFBE000F2E02;
+			remoteInfo = ScratchCard;
+		};
+		83DD49562A03BFBF000F2E02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83DD49322A03BFBE000F2E02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83DD49392A03BFBE000F2E02;
+			remoteInfo = ScratchCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83DD493A2A03BFBE000F2E02 /* ScratchCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83DD493D2A03BFBE000F2E02 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		83DD49412A03BFBF000F2E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83DD49432A03BFBF000F2E02 /* ScratchCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScratchCard.entitlements; sourceTree = "<group>"; };
+		83DD49452A03BFBF000F2E02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83DD494B2A03BFBF000F2E02 /* ScratchCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83DD49552A03BFBF000F2E02 /* ScratchCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83DD49592A03BFBF000F2E02 /* ScratchCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardUITests.swift; sourceTree = "<group>"; };
+		83DD495B2A03BFBF000F2E02 /* ScratchCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83DD49A72A03CBE9000F2E02 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		83DD49A82A03CBE9000F2E02 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		83DD49AC2A03CC7B000F2E02 /* ScratchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCard.swift; sourceTree = "<group>"; };
+		83DD49B02A03CEE4000F2E02 /* String+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
+		83DD49B22A03CFD4000F2E02 /* DashboardViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewState.swift; sourceTree = "<group>"; };
+		83DD49B42A03D06F000F2E02 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		83DD49B72A03D120000F2E02 /* SharedStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStorage.swift; sourceTree = "<group>"; };
+		83DD49B92A03D2F2000F2E02 /* DashboardEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardEmptyStateView.swift; sourceTree = "<group>"; };
+		83DD49BB2A03D409000F2E02 /* DashboardContentStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardContentStateView.swift; sourceTree = "<group>"; };
+		83DD49BD2A03D443000F2E02 /* ScratchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardView.swift; sourceTree = "<group>"; };
+		83DD49C12A03D662000F2E02 /* ScratchCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardViewModel.swift; sourceTree = "<group>"; };
+		83DD49C92A03DF06000F2E02 /* PrimaryButtonStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyleModifier.swift; sourceTree = "<group>"; };
+		83DD49CE2A03E5F4000F2E02 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		83DD49D02A03ED6D000F2E02 /* AppFlowState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowState.swift; sourceTree = "<group>"; };
+		83DD49D42A04CAEA000F2E02 /* BottomStackStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomStackStyle.swift; sourceTree = "<group>"; };
+		83DD49D62A04CB81000F2E02 /* DashboardContentStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardContentStateViewModel.swift; sourceTree = "<group>"; };
+		83DD49DD2A04D5D2000F2E02 /* RotationShakeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationShakeAnimation.swift; sourceTree = "<group>"; };
+		83DD49E02A04DD17000F2E02 /* ScratchCardDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardDetailService.swift; sourceTree = "<group>"; };
+		83DD49E22A04E4FF000F2E02 /* String+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Identifiable.swift"; sourceTree = "<group>"; };
+		83DD49E52A04E68B000F2E02 /* ScratchCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardDetailView.swift; sourceTree = "<group>"; };
+		83DD49E62A04E68B000F2E02 /* ScratchCardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardDetailViewModel.swift; sourceTree = "<group>"; };
+		83DD49E92A04EBF8000F2E02 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		83DD49EB2A04F32F000F2E02 /* URL+StringLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+StringLiteral.swift"; sourceTree = "<group>"; };
+		83DD49ED2A04F36C000F2E02 /* ActivateScratchCardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateScratchCardResponse.swift; sourceTree = "<group>"; };
+		83DD49EF2A04FDDE000F2E02 /* ScratchCardDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardDetailViewModelTests.swift; sourceTree = "<group>"; };
+		83DD49F32A050EEE000F2E02 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		83DD49F42A0512C3000F2E02 /* ScratchCardDetailServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardDetailServiceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83DD49372A03BFBE000F2E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83DD49482A03BFBF000F2E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83DD49522A03BFBF000F2E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83DD49312A03BFBE000F2E02 = {
+			isa = PBXGroup;
+			children = (
+				83DD49F32A050EEE000F2E02 /* README.md */,
+				83DD493C2A03BFBE000F2E02 /* ScratchCard */,
+				83DD494E2A03BFBF000F2E02 /* ScratchCardTests */,
+				83DD49582A03BFBF000F2E02 /* ScratchCardUITests */,
+				83DD493B2A03BFBE000F2E02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83DD493B2A03BFBE000F2E02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83DD493A2A03BFBE000F2E02 /* ScratchCard.app */,
+				83DD494B2A03BFBF000F2E02 /* ScratchCardTests.xctest */,
+				83DD49552A03BFBF000F2E02 /* ScratchCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83DD493C2A03BFBE000F2E02 /* ScratchCard */ = {
+			isa = PBXGroup;
+			children = (
+				83DD493D2A03BFBE000F2E02 /* App.swift */,
+				83DD49D02A03ED6D000F2E02 /* AppFlowState.swift */,
+				83DD49B42A03D06F000F2E02 /* AppState.swift */,
+				83DD49C02A03D44B000F2E02 /* Global */,
+				83DD49732A03C04C000F2E02 /* Resources */,
+				83DD49722A03C00A000F2E02 /* Scenes */,
+			);
+			path = ScratchCard;
+			sourceTree = "<group>";
+		};
+		83DD49442A03BFBF000F2E02 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49452A03BFBF000F2E02 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83DD494E2A03BFBF000F2E02 /* ScratchCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49F42A0512C3000F2E02 /* ScratchCardDetailServiceTests.swift */,
+				83DD49EF2A04FDDE000F2E02 /* ScratchCardDetailViewModelTests.swift */,
+			);
+			path = ScratchCardTests;
+			sourceTree = "<group>";
+		};
+		83DD49582A03BFBF000F2E02 /* ScratchCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49592A03BFBF000F2E02 /* ScratchCardUITests.swift */,
+				83DD495B2A03BFBF000F2E02 /* ScratchCardUITestsLaunchTests.swift */,
+			);
+			path = ScratchCardUITests;
+			sourceTree = "<group>";
+		};
+		83DD49722A03C00A000F2E02 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49A42A03CB81000F2E02 /* Dashboard */,
+				83DD49E42A04E66D000F2E02 /* ScratchCardDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		83DD49732A03C04C000F2E02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49442A03BFBF000F2E02 /* Preview Content */,
+				83DD49412A03BFBF000F2E02 /* Assets.xcassets */,
+				83DD49432A03BFBF000F2E02 /* ScratchCard.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83DD49A42A03CB81000F2E02 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49AE2A03CD38000F2E02 /* Views */,
+				83DD49A72A03CBE9000F2E02 /* DashboardView.swift */,
+				83DD49A82A03CBE9000F2E02 /* DashboardViewModel.swift */,
+				83DD49B22A03CFD4000F2E02 /* DashboardViewState.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		83DD49AB2A03CC73000F2E02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49AC2A03CC7B000F2E02 /* ScratchCard.swift */,
+				83DD49B72A03D120000F2E02 /* SharedStorage.swift */,
+				83DD49ED2A04F36C000F2E02 /* ActivateScratchCardResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83DD49AE2A03CD38000F2E02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49D82A04CCF2000F2E02 /* ContentState */,
+				83DD49B92A03D2F2000F2E02 /* DashboardEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83DD49AF2A03CEDA000F2E02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49B02A03CEE4000F2E02 /* String+Error.swift */,
+				83DD49E22A04E4FF000F2E02 /* String+Identifiable.swift */,
+				83DD49EB2A04F32F000F2E02 /* URL+StringLiteral.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83DD49BF2A03D447000F2E02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49E92A04EBF8000F2E02 /* ActivityIndicatorView.swift */,
+				83DD49CE2A03E5F4000F2E02 /* PrimaryButton.swift */,
+				83DD49BD2A03D443000F2E02 /* ScratchCardView.swift */,
+				83DD49C12A03D662000F2E02 /* ScratchCardViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83DD49C02A03D44B000F2E02 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49C62A03DD75000F2E02 /* Modifiers */,
+				83DD49AF2A03CEDA000F2E02 /* Extensions */,
+				83DD49AB2A03CC73000F2E02 /* Models */,
+				83DD49BF2A03D447000F2E02 /* Views */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		83DD49C62A03DD75000F2E02 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49D42A04CAEA000F2E02 /* BottomStackStyle.swift */,
+				83DD49C92A03DF06000F2E02 /* PrimaryButtonStyleModifier.swift */,
+				83DD49DD2A04D5D2000F2E02 /* RotationShakeAnimation.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		83DD49D82A04CCF2000F2E02 /* ContentState */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49BB2A03D409000F2E02 /* DashboardContentStateView.swift */,
+				83DD49D62A04CB81000F2E02 /* DashboardContentStateViewModel.swift */,
+			);
+			path = ContentState;
+			sourceTree = "<group>";
+		};
+		83DD49DF2A04DD00000F2E02 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49E02A04DD17000F2E02 /* ScratchCardDetailService.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		83DD49E42A04E66D000F2E02 /* ScratchCardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				83DD49DF2A04DD00000F2E02 /* Utilities */,
+				83DD49E52A04E68B000F2E02 /* ScratchCardDetailView.swift */,
+				83DD49E62A04E68B000F2E02 /* ScratchCardDetailViewModel.swift */,
+			);
+			path = ScratchCardDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83DD49392A03BFBE000F2E02 /* ScratchCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83DD495F2A03BFBF000F2E02 /* Build configuration list for PBXNativeTarget "ScratchCard" */;
+			buildPhases = (
+				83DD49362A03BFBE000F2E02 /* Sources */,
+				83DD49372A03BFBE000F2E02 /* Frameworks */,
+				83DD49382A03BFBE000F2E02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScratchCard;
+			productName = ScratchCard;
+			productReference = 83DD493A2A03BFBE000F2E02 /* ScratchCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83DD494A2A03BFBF000F2E02 /* ScratchCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83DD49622A03BFBF000F2E02 /* Build configuration list for PBXNativeTarget "ScratchCardTests" */;
+			buildPhases = (
+				83DD49472A03BFBF000F2E02 /* Sources */,
+				83DD49482A03BFBF000F2E02 /* Frameworks */,
+				83DD49492A03BFBF000F2E02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83DD494D2A03BFBF000F2E02 /* PBXTargetDependency */,
+			);
+			name = ScratchCardTests;
+			productName = ScratchCardTests;
+			productReference = 83DD494B2A03BFBF000F2E02 /* ScratchCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83DD49542A03BFBF000F2E02 /* ScratchCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83DD49652A03BFBF000F2E02 /* Build configuration list for PBXNativeTarget "ScratchCardUITests" */;
+			buildPhases = (
+				83DD49512A03BFBF000F2E02 /* Sources */,
+				83DD49522A03BFBF000F2E02 /* Frameworks */,
+				83DD49532A03BFBF000F2E02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83DD49572A03BFBF000F2E02 /* PBXTargetDependency */,
+			);
+			name = ScratchCardUITests;
+			productName = ScratchCardUITests;
+			productReference = 83DD49552A03BFBF000F2E02 /* ScratchCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83DD49322A03BFBE000F2E02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					83DD49392A03BFBE000F2E02 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					83DD494A2A03BFBF000F2E02 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 83DD49392A03BFBE000F2E02;
+					};
+					83DD49542A03BFBF000F2E02 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 83DD49392A03BFBE000F2E02;
+					};
+				};
+			};
+			buildConfigurationList = 83DD49352A03BFBE000F2E02 /* Build configuration list for PBXProject "ScratchCard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83DD49312A03BFBE000F2E02;
+			productRefGroup = 83DD493B2A03BFBE000F2E02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83DD49392A03BFBE000F2E02 /* ScratchCard */,
+				83DD494A2A03BFBF000F2E02 /* ScratchCardTests */,
+				83DD49542A03BFBF000F2E02 /* ScratchCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83DD49382A03BFBE000F2E02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DD49462A03BFBF000F2E02 /* Preview Assets.xcassets in Resources */,
+				83DD49422A03BFBF000F2E02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83DD49492A03BFBF000F2E02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83DD49532A03BFBF000F2E02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83DD49362A03BFBE000F2E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DD49B32A03CFD4000F2E02 /* DashboardViewState.swift in Sources */,
+				83DD49D72A04CB81000F2E02 /* DashboardContentStateViewModel.swift in Sources */,
+				83DD49CF2A03E5F4000F2E02 /* PrimaryButton.swift in Sources */,
+				83DD49B12A03CEE4000F2E02 /* String+Error.swift in Sources */,
+				83DD49EC2A04F32F000F2E02 /* URL+StringLiteral.swift in Sources */,
+				83DD49E72A04E68B000F2E02 /* ScratchCardDetailView.swift in Sources */,
+				83DD49BC2A03D409000F2E02 /* DashboardContentStateView.swift in Sources */,
+				83DD49B52A03D06F000F2E02 /* AppState.swift in Sources */,
+				83DD49A92A03CBE9000F2E02 /* DashboardView.swift in Sources */,
+				83DD49E82A04E68B000F2E02 /* ScratchCardDetailViewModel.swift in Sources */,
+				83DD49D12A03ED6D000F2E02 /* AppFlowState.swift in Sources */,
+				83DD49B82A03D120000F2E02 /* SharedStorage.swift in Sources */,
+				83DD49CA2A03DF06000F2E02 /* PrimaryButtonStyleModifier.swift in Sources */,
+				83DD49E12A04DD17000F2E02 /* ScratchCardDetailService.swift in Sources */,
+				83DD493E2A03BFBE000F2E02 /* App.swift in Sources */,
+				83DD49E32A04E4FF000F2E02 /* String+Identifiable.swift in Sources */,
+				83DD49BA2A03D2F2000F2E02 /* DashboardEmptyStateView.swift in Sources */,
+				83DD49BE2A03D443000F2E02 /* ScratchCardView.swift in Sources */,
+				83DD49EE2A04F36C000F2E02 /* ActivateScratchCardResponse.swift in Sources */,
+				83DD49EA2A04EBF8000F2E02 /* ActivityIndicatorView.swift in Sources */,
+				83DD49AA2A03CBE9000F2E02 /* DashboardViewModel.swift in Sources */,
+				83DD49D52A04CAEA000F2E02 /* BottomStackStyle.swift in Sources */,
+				83DD49DE2A04D5D2000F2E02 /* RotationShakeAnimation.swift in Sources */,
+				83DD49AD2A03CC7B000F2E02 /* ScratchCard.swift in Sources */,
+				83DD49C22A03D662000F2E02 /* ScratchCardViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83DD49472A03BFBF000F2E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DD49F02A04FDDE000F2E02 /* ScratchCardDetailViewModelTests.swift in Sources */,
+				83DD49F52A0512C3000F2E02 /* ScratchCardDetailServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83DD49512A03BFBF000F2E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DD495A2A03BFBF000F2E02 /* ScratchCardUITests.swift in Sources */,
+				83DD495C2A03BFBF000F2E02 /* ScratchCardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83DD494D2A03BFBF000F2E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83DD49392A03BFBE000F2E02 /* ScratchCard */;
+			targetProxy = 83DD494C2A03BFBF000F2E02 /* PBXContainerItemProxy */;
+		};
+		83DD49572A03BFBF000F2E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83DD49392A03BFBE000F2E02 /* ScratchCard */;
+			targetProxy = 83DD49562A03BFBF000F2E02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		83DD495D2A03BFBF000F2E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83DD495E2A03BFBF000F2E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		83DD49602A03BFBF000F2E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScratchCard/Resources/ScratchCard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScratchCard/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = Z4V2RBG4M7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cleverlance.ScratchCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83DD49612A03BFBF000F2E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScratchCard/Resources/ScratchCard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScratchCard/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = Z4V2RBG4M7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cleverlance.ScratchCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83DD49632A03BFBF000F2E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V2RBG4M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cleverlance.ScratchCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScratchCard";
+			};
+			name = Debug;
+		};
+		83DD49642A03BFBF000F2E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V2RBG4M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cleverlance.ScratchCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScratchCard";
+			};
+			name = Release;
+		};
+		83DD49662A03BFBF000F2E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V2RBG4M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cleverlance.ScratchCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScratchCard;
+			};
+			name = Debug;
+		};
+		83DD49672A03BFBF000F2E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V2RBG4M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cleverlance.ScratchCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScratchCard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83DD49352A03BFBE000F2E02 /* Build configuration list for PBXProject "ScratchCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83DD495D2A03BFBF000F2E02 /* Debug */,
+				83DD495E2A03BFBF000F2E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83DD495F2A03BFBF000F2E02 /* Build configuration list for PBXNativeTarget "ScratchCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83DD49602A03BFBF000F2E02 /* Debug */,
+				83DD49612A03BFBF000F2E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83DD49622A03BFBF000F2E02 /* Build configuration list for PBXNativeTarget "ScratchCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83DD49632A03BFBF000F2E02 /* Debug */,
+				83DD49642A03BFBF000F2E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83DD49652A03BFBF000F2E02 /* Build configuration list for PBXNativeTarget "ScratchCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83DD49662A03BFBF000F2E02 /* Debug */,
+				83DD49672A03BFBF000F2E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83DD49322A03BFBE000F2E02 /* Project object */;
+}
